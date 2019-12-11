@@ -29,11 +29,13 @@ class Square extends Polygon {
   get isValid() {
     if (!Array.isArray(this.sides)) return;
     if (this.count !== 4) return;
-    let s1 = this.sides[0]
-    let s2 = this.sides[1]
-    let s3 = this.sides[2]
+    let s1 = this.sides[0];
+    let s2 = this.sides[1];
+    let s3 = this.sides[2];
     let side4 = this.sides[3]
-    return ((s1 === s2) && (s1 === s3) && (s1 === side4))
+    return ((s1 === s2) && 
+    (s1 === s3) && 
+    (s1 === side4))
   }
   get area() {
     if (!Array.isArray(this.sides)) return;
